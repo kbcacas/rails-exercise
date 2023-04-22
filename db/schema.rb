@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_22_125727) do
+ActiveRecord::Schema.define(version: 2023_04_22_130530) do
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "sku"
+    t.integer "inventory_quantity"
+    t.datetime "inventory_updated_time"
+    t.integer "store_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["store_id"], name: "index_products_on_store_id"
+  end
 
   create_table "stores", force: :cascade do |t|
     t.string "name"

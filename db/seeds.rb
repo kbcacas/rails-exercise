@@ -1,4 +1,6 @@
 require 'ffaker'
+
+# cleans database before seeding
 Product.destroy_all
 Store.destroy_all
 
@@ -11,10 +13,6 @@ end
 
 def random_quantity
   rand(1..50)
-end
-
-def random_store_id
-  rand(20..40)
 end
 
 10.times do

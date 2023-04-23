@@ -3,6 +3,9 @@ class Product < ApplicationRecord
 
   belongs_to :store
 
+  validates :name, :sku, presence: true, uniqueness: true
+  validates :inventory_quantity, :store_id, presence: true
+
   def update_inventory_updated_time
     self.inventory_updated_time = Time.now
   end

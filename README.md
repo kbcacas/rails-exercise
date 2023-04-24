@@ -1,24 +1,29 @@
-# README
+## Rails Exercise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites
+```
+ruby 3.0.3
+rails 6.0.6.1
+sqlite3 1.4
+```
 
-Things you may want to cover:
+### Setting up the app
 
-* Ruby version
+#### 1. Install gems
+```
+$ bundle install
+```
 
-* System dependencies
+#### 2. Setup database
+I have prepared initial data to play around for your convenience. Check `db/seeds.rb`
+```
+$ rails db:setup
+```
+_This creates the database (`db:create`), loads the schema (`db:schema:load`), and seeds data if there is any (`db:seed`) all in one step._
 
-* Configuration
+#### 3. Start the server
+```
+$ rails server
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### 4. Hit up http://localhost:3000

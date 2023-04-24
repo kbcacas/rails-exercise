@@ -52,6 +52,7 @@ end
 
 group :development, :test do
   gem 'ffaker'
+  gem 'rexml'
   gem 'rspec-rails'
 end
 

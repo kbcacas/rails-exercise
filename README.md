@@ -30,7 +30,8 @@ $ rails server
 
 
 
-### Of course, We have testing
+### Testing
+
 _“A code that cannot be tested is flawed.” – Anonymous_
 ```
 bundle exec rspec --format documentation

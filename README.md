@@ -27,3 +27,11 @@ $ rails server
 ```
 
 #### 4. Hit up http://localhost:3000
+
+
+
+### Of course, We have testing
+_“A code that cannot be tested is flawed.” – Anonymous_
+```
+bundle exec rspec --format documentation
+```
